@@ -1,3 +1,39 @@
 body {
-	background: #222;
+	margin: 0;
+	padding: 0;
+	background: #22201D;
+	font-family: serif;
+}
+
+.full-width {
+	width: 960px;
+}
+
+#top-panel-wrapper {
+	clear: both;
+	background: #080502;
+	background-image: 
+		-webkit-radial-gradient(center, circle, rgba(255,255,255,0.05) 0, rgba(255,255,255,0) 1000px);
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#top-panel {
+	height: 500px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background: 
+		url("gargoyle.png") 20px bottom no-repeat, 
+		url("ogx-logo.png") 650px 80px no-repeat;
+}
+#tagline {
+	position: relative;
+	left: 500px;
+	top: 230px;
+	width: 400px;
+	
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: black 0 2px 5px, black 0 2px 5px, black 0 2px 5px;
 }
