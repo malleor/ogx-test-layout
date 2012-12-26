@@ -5,6 +5,7 @@ body {
 	font-family: serif;
 }
 
+/* Panel layout */
 .panel-wrapper {
 	clear: both;
 	margin-top: 50px;
@@ -12,14 +13,12 @@ body {
 	background-color: rgba(0,0,0,0.05);
 	width: 100%;
 }
-
 .panel, #top-panel {
 	display: block;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 .panel-title {
 	margin-left: 80px;
 	color: #eee;
@@ -34,6 +33,7 @@ body {
 	padding-right: 0.5em;
 }
 
+/* Carousel control */
 .carousel {
 	display: block;
 	margin-left: auto;
@@ -48,17 +48,17 @@ body {
 }
 .carousel::before {
 	float: left;
-	top: 100px;
+	top: 130px;
 	background: url("sprite_controls.png") 0 -41px no-repeat;
 }
 .carousel::after {
 	float: right;
-	top: -220px;
+	top: -190px;
 	background: url("sprite_controls.png") -41px -41px no-repeat;
 }
 .carousel-item {
 	display: block;
-	margin: 2em auto 2em auto;
+	margin: 2em auto 0 auto;
 	width: 480px;
 	height: 270px;
 	padding-top: 50px;
@@ -72,6 +72,7 @@ body {
 	vertical-align: center;
 }
 
+/* Top panel */
 #top-panel-wrapper {
 	clear: both;
 	background: #080502;
@@ -99,22 +100,26 @@ body {
 	text-shadow: black 0 2px 5px, black 0 2px 5px, black 0 2px 5px;
 }
 
+/* Projects */
 #project-highlights {
 }
 #project-highlights .carousel-item {
 	background: rgba(100,0,0,0.2);
 }
 
+/* Team */
 #the-team {
 	height: 400px;
 }
 
+/* Research */
 #research {
 }
 #research .carousel-item {
 	background: rgba(0,100,0,0.2);
 }
 
+/* Co-operation */
 #coop-buttons-wrapper {
 	text-align: center;
 }
