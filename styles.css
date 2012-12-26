@@ -175,6 +175,10 @@ body {
     height: 70px;
     border-radius: 50%;
     border: solid black 2px;
+	opacity: 0.8;
+}
+.team-face:hover {
+	opacity: 1;
 }
 
 /* Research */
