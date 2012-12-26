@@ -2,6 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #22201D;
+	background-image: 
+		-webkit-radial-gradient(center 200px, circle, rgba(0, 100, 255, 0.05) 0, rgba(255, 100, 0, 0) 100%);
 	font-family: serif;
 }
 
@@ -9,8 +11,8 @@ body {
 .panel-wrapper {
 	clear: both;
 	margin-top: 50px;
-	margin-bottom: 50px;
-	background-color: rgba(0,0,0,0.05);
+	margin-bottom: 100px;
+	//background-color: rgba(0,0,0,0.05);
 	width: 100%;
 }
 .panel, #top-panel {
@@ -21,7 +23,7 @@ body {
 }
 .panel-title {
 	margin-left: 80px;
-	color: #eee;
+	color: #ccf;
 	font-size: 1.5em;
 	font-family: serif;
 	font-style: italic;
@@ -32,12 +34,24 @@ body {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
-
-/* Carousel control */
-.carousel {
+.panel-content {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	
+	color: black;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.panel-content > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Carousel control */
+.carousel {
 }
 .carousel::before, .carousel::after {
 	content: "";
@@ -45,6 +59,8 @@ body {
 	position: relative;
 	width: 41px;
 	height: 41px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 .carousel::before {
 	float: left;
@@ -64,12 +80,13 @@ body {
 	padding-top: 50px;
 	
 	background: rgba(0,0,0,0.2);
-	color: white;
-	font-family: sans-serif;
-	font-size: 1em;
-	font-weight: bold;
-	text-align: center;
-	vertical-align: center;
+}
+
+.content-box {
+	background: #ccc;
+	background-image: 
+		-webkit-radial-gradient(center -30%, circle, rgba(255,255,255,1) 0, rgba(255, 255, 255, 0) 100%);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.8);
 }
 
 /* Top panel */
@@ -77,7 +94,8 @@ body {
 	clear: both;
 	background: #080502;
 	background-image: 
-		-webkit-radial-gradient(center, circle, rgba(255,255,255,0.05) 0, rgba(255,255,255,0) 1000px),
+		-webkit-radial-gradient(40% -10%, circle, rgba(255, 100, 0, 0.1) 0, transparent 1000px), 
+		-webkit-radial-gradient(80% 100%, circle, rgba(255, 100, 0, 0.05) 0, transparent 1000px), 
 		-webkit-linear-gradient(bottom, black, transparent);
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
@@ -101,22 +119,69 @@ body {
 }
 
 /* Projects */
+#project-highlights .panel-title {
+	display: none;
+}
 #project-highlights {
 }
 #project-highlights .carousel-item {
-	background: rgba(100,0,0,0.2);
+	//background: rgba(100,0,0,0.2);
 }
 
 /* Team */
 #the-team {
-	height: 400px;
+}
+#the-team .panel-content {
+	width: 600px;
+	height: 150px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+	text-align: left;
+}
+#team-mission, #team-profile {
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	padding: 1em;
+}
+#team-mission {
+	float: left;
+}
+#team-profile {
+	float: right;
+}
+#team-faces {
+	display: block;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+#team-faces > div {
+	padding-right: 10px;
+}
+#team-faces > div:nth-child(even) {
+	padding-left: 40px;
+}
+.team-face {
+	display: inline-block;
+	margin-right: 10px;
+    background: white url("plato.jpg") 0 0 no-repeat;
+    background-size: 100% auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid black 2px;
 }
 
 /* Research */
 #research {
 }
 #research .carousel-item {
-	background: rgba(0,100,0,0.2);
+	//background: rgba(0,100,0,0.2);
 }
 
 /* Co-operation */
