@@ -83,30 +83,83 @@ section {
 	
 
 #sections {
+	display: table;
+	border-spacing: 1em;
 	height: 200px;
-	margin-top: 2.5em;
+	margin-top: 2em;
 }
-#sections > .box {
-	display: inline-table;
-	width: 24%;
-	margin-left: 1%;
+#sections .box {
+	display: table-cell;
 	height: 100%;
 	
 	background: #eee;
 	background-image: 
 		-webkit-radial-gradient(center -30%, circle, rgba(255,255,255,1) 0, rgba(255, 255, 255, 0) 100%);
 	box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+	
+	font-size: 0.8em;
+	color: black;
+	line-height: 1.5;
+	vertical-align: top;
 }
-#sections > .box:first-child {
+#sections #team-description {
+	width: 25%;
+}
+#sections #team-members {
+	width: 25%;
+}
+#sections #blog {
+	width: 50%;
+}
+#sections .box, #sections .box a {
+	font-family: sans-serif;
+	text-decoration: none;
+}
+#sections .box a {
+	color: #66f;
+}
+#sections .box a:hover {
+	color: #00a;
+}
+/*#sections .box:first-child {
 	margin-left: 0.5%;
 }
-#sections > .box:last-child {
+#sections .box:last-child {
 	margin-right: 0.5%;
-}
-#sections > .box p {
+}*/
+#sections .box p {
 	margin: 0.8em;
 }
 
+
+#sections #team-members {
+	background: transparent;
+	box-shadow: none;
+	text-align: left;
+}
+.team-face {
+	display: inline-block;
+	margin: 1px;
+    background: white url("plato.jpg") 0 0 no-repeat;
+    background-size: 100% auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid black 1px;
+	opacity: 0.8;
+}
+.team-face:hover {
+	opacity: 0.999; /* LOL, a hack to prevent elements from being 1px to the right when opaque */
+}
+#sections #team-members a:nth-of-type(7n+5) .team-face {
+	margin-left: 27px;
+}
+/*::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 50px;
+}*/
 
 
 #footer-wrapper {
