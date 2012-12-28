@@ -75,7 +75,7 @@ section {
 	background: #ddf;
 	opacity: 0.5;
 	border-radius: 50%;
-	border: solid black 2px;
+	border: solid #666 2px;
 }
 #highlights-nav li:first-of-type {
 	opacity: 1;
