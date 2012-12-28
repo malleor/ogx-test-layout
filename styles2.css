@@ -51,7 +51,7 @@ section {
 	display: inline-block;
 	margin: 0 0 0 0.5em;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: "Lucida Sans Unicode", sans-serif;
 	font-size: 1.8em;
 }
 
@@ -147,7 +147,7 @@ section {
 	width: 50%;
 }
 #sections .box, #sections .box a {
-	font-family: sans-serif;
+	font-family: "Lucida Sans Unicode", sans-serif;
 	text-decoration: none;
 }
 #sections .box a {
