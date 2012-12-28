@@ -220,6 +220,29 @@ section {
 	font-weight:bold;
 	font-size: 12px;
 }
+#footer-container nav {
+	display: table;
+	width: 600px;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer-container nav > div {
+	display: table-cell;
+	width: 33%;
+}
 #footer-container h1 {
-	font-size: 1.2em;
+	font-size: 1.1em;
+	margin: 0.3em;
+}
+#footer-container ul {
+	list-style: none;
+	padding-left: 0;
+	line-height: 1.5;
+	margin: 0.3em;
+}
+#footer-container li {
+}
+#footer-container footer {
+	height: 10%;
 }
